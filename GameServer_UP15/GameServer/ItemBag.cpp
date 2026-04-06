@@ -3,10 +3,12 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "BCustomItemBank.h"
 #include "ItemBag.h"
 #include "DSProtocol.h"
 #include "ItemOptionRate.h"
 #include "ItemManager.h"
+#include "ItemStack.h"
 #include "JewelOfHarmonyOption.h"
 #include "Map.h"
 #include "MemScript.h"
@@ -693,4 +695,117 @@ bool CItemBag::DropInventoryItem(LPOBJ lpObj, int map, int x, int y) // OK
 	}
 
 	return 1;
+}
+bool CItemBag::DropBankItem(LPOBJ lpObj, int map, int x, int y)
+{
+    if (this->m_ItemBagEx.m_ItemBagInfo.empty() == 0)
+    {
+        return this->m_ItemBagEx.DropItem(lpObj, map, x, y);
+    }
+
+    for (int n = 0; n < this->m_ItemDropCount; n++)
+    {
+        int px = x;
+        int py = y;
+
+        if (this->m_ItemDropCount > 1 || (gMap[map].CheckAttr(px, py, 4) != 0 || gMap[map].CheckAttr(px, py, 8) != 0))
+        {
+            if (this->GetRandomItemDropLocation(map, &px, &py, 2, 2, 10) == 0)
+            {
+                px = lpObj->X;
+                py = lpObj->Y;
+            }
+        }
+
+        if ((GetLargeRand() % 100) >= this->m_ItemDropRate)
+        {
+            if (!gObjCheckMaxMoney(lpObj->Index, this->m_DropZen))
+            {
+                if (lpObj->Money < MAX_MONEY)
+                {
+                    lpObj->Money = MAX_MONEY;
+                    continue;
+                }
+            }
+            else
+            {
+                lpObj->Money += this->m_DropZen;
+            }
+
+            continue;
+        }
+
+        if ((GetLargeRand() % 10000) < this->m_SetItemDropRate)
+        {
+            gSetItemType.MakeRandomSetItem(lpObj->Index, map, px, py);
+            continue;
+        }
+
+        CItem item;
+
+        if (this->GetItem(lpObj, &item) != 0)
+        {
+            int addCount = (gItemStack.GetItemMaxStack(item.m_Index) == 0) ? 1 : (int)item.m_Durability;
+
+            if (gBCustomItemBank.CheckInfoListItemBank(item.m_Index, item.m_Level) != -1)
+            {
+                if (gBCustomItemBank.CongTruBank(lpObj->Index, item.m_Index, item.m_Level, addCount))
+                {
+                    continue;
+                }
+            }
+
+            ITEM_INFO ItemInfo;
+
+            if (gItemManager.GetInfo(item.m_Index, &ItemInfo) == 0)
+            {
+                continue;
+            }
+
+            int crear = 0;
+            int MaxY = (gItemManager.GetInventoryMaxValue(lpObj) - INVENTORY_WEAR_SIZE) / 8;
+
+            for (int y = 0; y < MaxY; y++)
+            {
+                for (int x = 0; x < 8; x++)
+                {
+                    if (lpObj->InventoryMap[((y * 8) + x)] == 0xFF)
+                    {
+                        BYTE slot = gItemManager.InventoryRectCheck(lpObj->Index, x, y, ItemInfo.Width, ItemInfo.Height);
+
+                        if (slot != 0xFF)
+                        {
+                            if (crear == 0)
+                            {
+                                GDCreateItemSend(lpObj->Index,
+                                    0xEB, 0, 0, item.m_Index,
+                                    (BYTE)item.m_Level, 0,
+                                    item.m_Option1,
+                                    item.m_Option2,
+                                    item.m_Option3,
+                                    lpObj->Index,
+                                    item.m_NewOption,
+                                    item.m_SetOption,
+                                    item.m_JewelOfHarmonyOption,
+                                    item.m_ItemOptionEx,
+                                    item.m_SocketOption,
+                                    item.m_SocketOptionBonus, 0);
+
+                                crear = 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (crear == 0)
+            {
+                return 0;
+            }
+
+            continue;
+        }
+    }
+
+    return 1;
 }

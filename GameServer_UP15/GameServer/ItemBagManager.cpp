@@ -183,16 +183,17 @@ int CItemBagManager::DropItemByItemIndex(int ItemIndex,int ItemLevel,LPOBJ lpObj
 	{
 		if(it->second.ItemIndex != -1 && it->second.ItemIndex == ItemIndex && (it->second.ItemLevel == -1 || it->second.ItemLevel == ItemLevel))
 		{
-			if( it->second.DropType == 1 )
+			if (it->second.DropType == 2)
 			{
-				return ( it->second.ItemBag.DropInventoryItem(lpObj, map, x, y) ) ? 1 : 2;
-
+				return (it->second.ItemBag.DropBankItem(lpObj, map, x, y)) ? 1 : 2;
+			}
+			else if (it->second.DropType == 1)
+			{
+				return (it->second.ItemBag.DropInventoryItem(lpObj, map, x, y)) ? 1 : 2;
 			}
 			else
 			{
-				return ( it->second.ItemBag.DropItem(lpObj,map,x,y) ) ? 1 : 0;
-
-				//gNotice.GCNoticeSendToAll(0,0,0,0,0,0,"[%s] vua nem item %d]",lpObj->Name,gItemManager.GetItemName(ItemIndex));
+				return (it->second.ItemBag.DropItem(lpObj, map, x, y)) ? 1 : 0;
 			}
 			
 		}
@@ -223,14 +224,17 @@ bool CItemBagManager::DropItemBySpecialValue(int SpecialValue,LPOBJ lpObj,int ma
 		if(it->second.SpecialValue != -1 && it->second.SpecialValue == SpecialValue)
 		{
 
-			if( it->second.DropType == 1 )
+			if (it->second.DropType == 2)
 			{
-				return ( it->second.ItemBag.DropInventoryItem(lpObj, map, x, y) ) ? 1 : 2;
-
+				return (it->second.ItemBag.DropBankItem(lpObj, map, x, y)) ? 1 : 2;
+			}
+			else if (it->second.DropType == 1)
+			{
+				return (it->second.ItemBag.DropInventoryItem(lpObj, map, x, y)) ? 1 : 2;
 			}
 			else
 			{
-				return it->second.ItemBag.DropItem(lpObj,map,x,y);
+				return it->second.ItemBag.DropItem(lpObj, map, x, y);
 			}
 		}
 	}
@@ -244,10 +248,13 @@ bool CItemBagManager::DropItemByIndexItemBag(int IndexItemBag, LPOBJ lpObj) // O
 	{
 		if (it->second.Index != -1 && it->second.Index == IndexItemBag)
 		{
-			if (it->second.DropType == 1)
+			if (it->second.DropType == 2)
+			{
+				return (it->second.ItemBag.DropBankItem(lpObj, lpObj->Map, lpObj->X, lpObj->Y)) ? 1 : 2;
+			}
+			else if (it->second.DropType == 1)
 			{
 				return (it->second.ItemBag.DropInventoryItem(lpObj, lpObj->Map, lpObj->X, lpObj->Y)) ? 1 : 2;
-
 			}
 			else
 			{

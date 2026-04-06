@@ -41,6 +41,7 @@ public:
 	bool GetItem(LPOBJ lpObj, CItem* lpItem);
 	bool DropItem(LPOBJ lpObj, int map, int x, int y);
 	bool DropInventoryItem(LPOBJ lpObj, int map, int x, int y); // OK
+	bool DropBankItem(LPOBJ lpObj, int map, int x, int y);
 	std::vector<ITEM_BAG_INFO> m_ItemBagInfo;
 	int number;
 	int m_time;
