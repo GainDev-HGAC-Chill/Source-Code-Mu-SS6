@@ -3675,12 +3675,6 @@ void GDCustomGHRSRecv(SDHP_CUSTOM_GHRS_RECV* lpMsg, int index) // OK
 		gQueryManager.ExecQuery("INSERT INTO GHRS_top1 (time, MasterResetCount, ResetCount) VALUES (%d, %d, %d)", lpMsg->time, pMsg.Grand, pMsg.resets);
 		LogAdd(LOG_GREEN, "Gioi han reset Updated!");
 
-#if(CHIENTRUONGCO == 1)
-		gQueryManager.ExecQuery("Update Character SET CTCTime = CTCTime + %d, CTCRegDay = 0", RSTimeCTC);
-		LogAdd(LOG_BLUE, "ChienTruongCo Update!");
-		gQueryManager.Close();
-#endif
-
 	}
 	else {
 		pMsg.resets = gQueryManager.GetAsInteger("ResetCount");

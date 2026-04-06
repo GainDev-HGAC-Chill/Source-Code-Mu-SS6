@@ -21,7 +21,32 @@ char CustomerName[32];
 char CustomerHardwareId[36];
 int AdvancedLog;
 int RSTimeCTC;
+int CTCResetDay = -1;
 
+void CheckResetCTCDaily()
+{
+	#if(CHIEN_TRUONG_CO)
+		SYSTEMTIME t;
+
+		GetLocalTime(&t);
+
+		if (CTCResetDay == -1)
+		{
+			CTCResetDay = t.wDay;
+			return;
+		}
+
+		if (CTCResetDay != t.wDay)
+		{
+			CTCResetDay = t.wDay;
+
+			gQueryManager.ExecQuery("UPDATE Character SET CTCTime = CTCTime + %d, CTCRegDay = 0", RSTimeCTC);
+			gQueryManager.Close();
+
+			LogAdd(LOG_BLUE, "[CTC] Daily reset CTCRegDay success. Day=%d", CTCResetDay);
+		}
+	#endif
+}
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) // OK
 {
 	VM_START
@@ -206,6 +231,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 		switch (wParam)
 		{
 		case TIMER_1000:
+			CheckResetCTCDaily();
 			break;
 		case TIMER_2000:
 			gServerDisplayer.Run();
