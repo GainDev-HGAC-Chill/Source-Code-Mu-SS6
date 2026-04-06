@@ -1,0 +1,35 @@
+﻿Build started 27/11/2023 10:25:26 CH.
+     1>Project "D:\FULL SERVER MUONLINE\SERVER CUSTOM 6.16\Source\EncryptBMD_UP15\EncryptBMD\EncryptBMD.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D GAMESERVER_PREMIUM=1 /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"PREMIUM\EncryptBMD.pch" /Fo"PREMIUM\\" /Fd"PREMIUM\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt EncryptBMD.cpp ItemTooltip.cpp
+         EncryptBMD.cpp
+         ItemTooltip.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Tools\MAIN_INFO\EncryptTools\EncryptBMD.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"PREMIUM\EncryptBMD.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\FULL SERVER MUONLINE\SERVER CUSTOM 6.16\Tools\MAIN_INFO\EncryptTools\EncryptBMD.pdb" /SUBSYSTEM:CONSOLE /STACK:"4097152","4097152" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Tools\MAIN_INFO\EncryptTools\EncryptBMD.lib" /MACHINE:X86 PREMIUM\EncryptBMD.res
+         PREMIUM\CCRC32.obj
+         PREMIUM\cCPetRenderMesh.obj
+         PREMIUM\CustomEffectDynamic.obj
+         PREMIUM\CustomMonsterGlow.obj
+         PREMIUM\CustomPetEffect.obj
+         PREMIUM\CustomWIngEffect.obj
+         PREMIUM\EncryptBMD.obj
+         PREMIUM\InfoLog.obj
+         PREMIUM\ItemTooltip.obj
+         PREMIUM\JCMeshItemGlow.obj
+         PREMIUM\JCRendernoItemGlow.obj
+         PREMIUM\MemScript.obj
+         PREMIUM\MonsterEffect.obj
+         PREMIUM\MultiSelect.obj
+         PREMIUM\stdafx.obj
+         PREMIUM\tooltipbuff.obj
+         Generating code
+         Finished generating code
+         EncryptBMD.vcxproj -> D:\FULL SERVER MUONLINE\SERVER CUSTOM 6.16\Source\EncryptBMD_UP15\EncryptBMD\..\..\..\Tools\MAIN_INFO\EncryptTools\EncryptBMD.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\..\Tools\MAIN_INFO\EncryptTools\EncryptBMD.exe;#1" /manifest PREMIUM\EncryptBMD.exe.intermediate.manifest
+     1>Done Building Project "D:\FULL SERVER MUONLINE\SERVER CUSTOM 6.16\Source\EncryptBMD_UP15\EncryptBMD\EncryptBMD.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.61

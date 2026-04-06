@@ -1,0 +1,21 @@
+﻿Build started 4/3/26 14:59:49.
+     1>Project "G:\source mu\Source\Util\cryptopp\cryptlib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Release\cryptlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         cryptlib.vcxproj -> G:\source mu\Source\Util\cryptopp\.\Release\cryptlib.lib
+       FinalizeBuildStatus:
+         Deleting file ".\Release\cryptlib.unsuccessfulbuild".
+         Touching ".\Release\cryptlib.lastbuildstate".
+     1>Done Building Project "G:\source mu\Source\Util\cryptopp\cryptlib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.48

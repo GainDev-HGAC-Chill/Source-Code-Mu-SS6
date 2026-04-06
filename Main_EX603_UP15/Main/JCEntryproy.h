@@ -1,0 +1,30 @@
+#pragma once
+
+struct JCRECT
+{
+	float x;
+	float y;
+	float w;
+	float h;
+};
+
+
+enum ActionList
+{
+	JCHIDEPLAYERNAME = 1,
+	JCDINAMIC_EFFECT = 2,
+	JCSTATIC_EFFECT = 3,
+	JCSKILL_EFFECT = 4,
+	JCITEMGLOW_EFFECT = 5,
+	JCOBJECTSHADOW = 6,
+	JCOBJECTWORLDHIDE = 7,
+	JTWINGSOBJECT = 8,
+	JTWEAPONOBJECT = 9,
+	JTCLOACKOBJECT = 10,
+	JTPLAYEROBJECT = 11,
+	JCMouseEffect = 12,
+	JCZenDrop = 13,
+	JCDistance = 14,
+	NONE = 15,
+	DEFAULT = 16,
+};

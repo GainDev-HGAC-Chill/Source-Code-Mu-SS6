@@ -1,0 +1,25 @@
+﻿Build started 4/3/26 14:59:54.
+     1>Project "G:\source mu\Source\Util\cryptopp\cryptdll.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching ".\DLL_Release\cryptdll.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(G:\source mu\Source\Util\cryptopp\.\DLL_Release\cryptdll.dll) does not match the Linker's OutputFile property value (G:\source mu\Source\Util\cryptopp\DLL_Release\cryptopp.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(cryptdll) does not match the Linker's OutputFile property value (cryptopp). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         All outputs are up-to-date.
+         cryptdll.vcxproj -> G:\source mu\Source\Util\cryptopp\.\DLL_Release\cryptdll.dll
+       CustomBuildStep:
+       Skipping target "CustomBuildStep" because all output files are up-to-date with respect to the input files.
+       FinalizeBuildStatus:
+         Deleting file ".\DLL_Release\cryptdll.unsuccessfulbuild".
+         Touching ".\DLL_Release\cryptdll.lastbuildstate".
+     1>Done Building Project "G:\source mu\Source\Util\cryptopp\cryptdll.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.28

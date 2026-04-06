@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  CustomRankUser.cpp
+     Creating library ..\..\..\ClientS6 BaseS18\Main.lib and object ..\..\..\ClientS6 BaseS18\Main.exp
+  Generating code
+  Finished generating code
+wzMUQuiz.lib(Client.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'wzMUQuiz.lib(Client.obj)' or at 'G:\source mu\ClientS6 BaseS18\vc100.pdb'; linking object as if no debug info
+wzMUQuiz.lib(stdafx.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'wzMUQuiz.lib(stdafx.obj)' or at 'G:\source mu\ClientS6 BaseS18\vc100.pdb'; linking object as if no debug info
+wzMUQuiz.lib(UIControl.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'wzMUQuiz.lib(UIControl.obj)' or at 'G:\source mu\ClientS6 BaseS18\vc100.pdb'; linking object as if no debug info
+MUEmoji.lib(MUEmoji.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'MUEmoji.lib(MUEmoji.obj)' or at 'G:\source mu\ClientS6 BaseS18\vc100.pdb'; linking object as if no debug info
+MUEmoji.lib(stdafx.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'MUEmoji.lib(stdafx.obj)' or at 'G:\source mu\ClientS6 BaseS18\vc100.pdb'; linking object as if no debug info
+MUEmoji.lib(Util.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'MUEmoji.lib(Util.obj)' or at 'G:\source mu\ClientS6 BaseS18\vc100.pdb'; linking object as if no debug info
+detours.lib(detours.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(detours.obj)' or at 'G:\source mu\ClientS6 BaseS18\detours.pdb'; linking object as if no debug info
+detours.lib(disasm.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(disasm.obj)' or at 'G:\source mu\ClientS6 BaseS18\detours.pdb'; linking object as if no debug info
+  Main.vcxproj -> G:\source mu\Source\Main_EX603_UP15\Main\..\..\..\ClientS6 BaseS18\Main.dll

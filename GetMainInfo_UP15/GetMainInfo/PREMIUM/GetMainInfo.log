@@ -1,0 +1,46 @@
+﻿Build started 05/04/2024 7:29:36 CH.
+     1>Project "D:\FULL SERVER MUONLINE\SERVER MU CUSTOM MOI NHAT\Source\GetMainInfo_UP15\GetMainInfo\GetMainInfo.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D GAMESERVER_PREMIUM=1 /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"PREMIUM\GetMainInfo-Premium.pch" /Fo"PREMIUM\\" /Fd"PREMIUM\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GetMainInfo.cpp
+         GetMainInfo.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\Toll\MAIN_INFO\GetMainInfo-Premium.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"PREMIUM\GetMainInfo-Premium.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\FULL SERVER MUONLINE\SERVER MU CUSTOM MOI NHAT\Toll\MAIN_INFO\GetMainInfo-Premium.pdb" /SUBSYSTEM:CONSOLE /STACK:"4097152","4097152" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\Toll\MAIN_INFO\GetMainInfo-Premium.lib" /MACHINE:X86 PREMIUM\GetMainInfo.res
+         PREMIUM\CCRC32.obj
+         PREMIUM\CustomBuyVip.obj
+         PREMIUM\CustomCloak.obj
+         PREMIUM\CustomCommandInfo.obj
+         PREMIUM\CustomCrossBow.obj
+         PREMIUM\CustomEffectDynamic.obj
+         PREMIUM\CustomEffectRemake.obj
+         PREMIUM\CustomEventTimeText.obj
+         PREMIUM\CustomGloves.obj
+         PREMIUM\CustomItem.obj
+         PREMIUM\CustomPetEffect.obj
+         PREMIUM\ItemManager.obj
+         PREMIUM\CustomItemPosition.obj
+         PREMIUM\CustomJewel.obj
+         PREMIUM\CustomMessage.obj
+         PREMIUM\CustomMonster.obj
+         PREMIUM\CustomNpcName.obj
+         PREMIUM\CustomPet.obj
+         PREMIUM\CustomWing.obj
+         PREMIUM\CustomWIngEffect.obj
+         PREMIUM\Fog.obj
+         PREMIUM\GetMainInfo.obj
+         PREMIUM\InfoLog.obj
+         PREMIUM\ItemValue.obj
+         PREMIUM\MemScript.obj
+         PREMIUM\ModelEffect.obj
+         PREMIUM\SmokeEffect.obj
+         PREMIUM\stdafx.obj
+         Generating code
+         Finished generating code
+         GetMainInfo.vcxproj -> D:\FULL SERVER MUONLINE\SERVER MU CUSTOM MOI NHAT\Source\GetMainInfo_UP15\GetMainInfo\..\..\..\Toll\MAIN_INFO\GetMainInfo-Premium.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\..\Toll\MAIN_INFO\GetMainInfo-Premium.exe;#1" /manifest "PREMIUM\GetMainInfo-Premium.exe.intermediate.manifest"
+     1>Done Building Project "D:\FULL SERVER MUONLINE\SERVER MU CUSTOM MOI NHAT\Source\GetMainInfo_UP15\GetMainInfo\GetMainInfo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.33
