@@ -551,9 +551,9 @@ struct SDHP_CHARACTER_INFO_SAVE_SEND
 #endif
 
 #if(B_MOCNAP)
-	int NhanMocNap;
+    int TongNap;
+    int NhanMocNap;
 #endif
-
 };
 
 struct SDHP_INVENTORY_ITEM_SAVE_SEND

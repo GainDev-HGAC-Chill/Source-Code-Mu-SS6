@@ -355,12 +355,10 @@ struct SDHP_CHARACTER_INFO_SAVE_RECV
 	int Flag;
 	int CheckFlag;
 #endif
-
 #if(B_MOCNAP)
-	int TongNap;
-	int NhanMocNap;
+    int TongNap;
+    int NhanMocNap;
 #endif
-
 };
 
 

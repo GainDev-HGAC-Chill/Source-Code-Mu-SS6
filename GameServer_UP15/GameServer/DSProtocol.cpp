@@ -2725,7 +2725,8 @@ void GDCharacterInfoSaveSend(int aIndex) // OK
 #endif
 
 #if(B_MOCNAP)
-	pMsg.NhanMocNap = lpObj->NhanMocNap;
+	pMsg.TongNap = lpObj->TongNap;
+    pMsg.NhanMocNap = lpObj->NhanMocNap;
 #endif
 
 	gDataServerConnection.DataSend((BYTE*)&pMsg,sizeof(pMsg));
