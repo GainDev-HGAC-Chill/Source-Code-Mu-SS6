@@ -1,4 +1,4 @@
-﻿Build started 4/6/26 16:03:22.
+﻿Build started 4/7/26 22:35:40.
      1>Project "G:\source mu\Source\GameServer_UP15\GameServer\GameServer.vcxproj" on node 2 (build target(s)).
        Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
@@ -6,178 +6,26 @@
          Creating "Release\GameServer_EX603\GameServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D GAMESERVER_TYPE=0 /D GAMESERVER_UPDATE=603 /D GAMESERVER_LANGUAGE=1 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\GameServer_EX603\GameServer.pch" /Fo"Release\GameServer_EX603\\" /Fd"Release\GameServer_EX603\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt B_MocNap.cpp BattleRoyale.cpp BloodCastle.cpp CTCMini.cpp ChaosBox.cpp ChaosCastle.cpp ChienTruongCo.cpp CommandManager.cpp Crywolf.cpp CustomArena.cpp CustomOnlineLottery.cpp CustomQuiz.cpp CustomVongQuay.cpp DSProtocol.cpp DevilSquare.cpp DoubleGoer.cpp EventHideAndSeek.cpp EventInventory.cpp IllusionTemple.cpp ImperialGuardian.cpp ItemBag.cpp ItemBagManager.cpp ItemManager.cpp LuckyCoin.cpp Monster.cpp MuRummy.cpp NpcTalk.cpp ObjectManager.cpp RoyalBattleGround.cpp ServerInfo.cpp TEventGreatPK.cpp
-         B_MocNap.cpp
-     1>B_MocNap.cpp(132): warning C4172: returning address of local variable or temporary
-     1>B_MocNap.cpp(285): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-     1>B_MocNap.cpp(381): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>B_MocNap.cpp(381): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>B_MocNap.cpp(385): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>B_MocNap.cpp(385): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>B_MocNap.cpp(415): warning C4018: '<' : signed/unsigned mismatch
-     1>B_MocNap.cpp(425): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         BattleRoyale.cpp
-     1>BattleRoyale.cpp(301): warning C4172: returning address of local variable or temporary
-     1>BattleRoyale.cpp(801): warning C4018: '<' : signed/unsigned mismatch
-     1>BattleRoyale.cpp(1168): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-     1>BattleRoyale.cpp(1483): warning C4018: '<' : signed/unsigned mismatch
-     1>BattleRoyale.cpp(1499): warning C4018: '<' : signed/unsigned mismatch
-     1>BattleRoyale.cpp(1518): warning C4018: '<' : signed/unsigned mismatch
-     1>BattleRoyale.cpp(1685): warning C4018: '>' : signed/unsigned mismatch
-     1>BattleRoyale.cpp(1698): warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
-     1>BattleRoyale.cpp(1699): warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>BattleRoyale.cpp(1705): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-         BloodCastle.cpp
-     1>BloodCastle.cpp(2350): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         CTCMini.cpp
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4305: 'initializing' : truncation from 'int' to 'const BYTE'
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4309: 'initializing' : truncation of constant value
-     1>CTCMini.cpp(1335): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         ChaosBox.cpp
-     1>ChaosBox.cpp(1127): warning C4101: 'ItemInfo' : unreferenced local variable
-     1>ChaosBox.cpp(1196): warning C4101: 'ItemInfo' : unreferenced local variable
-     1>ChaosBox.cpp(3918): warning C4244: 'initializing' : conversion from 'long' to 'short', possible loss of data
-         ChaosCastle.cpp
-     1>ChaosCastle.cpp(1884): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         ChienTruongCo.cpp
-         CommandManager.cpp
-     1>CommandManager.cpp(788): warning C4244: 'initializing' : conversion from 'long' to 'short', possible loss of data
-         Crywolf.cpp
-         CustomArena.cpp
-     1>CustomArena.cpp(218): warning C4172: returning address of local variable or temporary
-         CustomOnlineLottery.cpp
-         CustomQuiz.cpp
-     1>CustomQuiz.cpp(436): warning C4996: '_strlwr': This function or variable may be unsafe. Consider using _strlwr_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(164) : see declaration of '_strlwr'
-     1>CustomQuiz.cpp(468): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         CustomVongQuay.cpp
-     1>CustomVongQuay.cpp(134): warning C4172: returning address of local variable or temporary
-     1>CustomVongQuay.cpp(290): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-     1>CustomVongQuay.cpp(339): warning C4018: '<' : signed/unsigned mismatch
-     1>CustomVongQuay.cpp(348): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-     1>CustomVongQuay.cpp(364): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>CustomVongQuay.cpp(364): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>CustomVongQuay.cpp(368): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>CustomVongQuay.cpp(368): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-         DSProtocol.cpp
-         DevilSquare.cpp
-     1>DevilSquare.cpp(1616): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         DoubleGoer.cpp
-         EventHideAndSeek.cpp
-         EventInventory.cpp
-         IllusionTemple.cpp
-     1>IllusionTemple.cpp(2696): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         ImperialGuardian.cpp
-         Compiling...
-         ItemBag.cpp
-     1>ItemBag.cpp(428): warning C4018: '<' : signed/unsigned mismatch
-     1>ItemBag.cpp(547): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
-         ItemBagManager.cpp
-     1>ItemBagManager.cpp(229): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-     1>ItemBagManager.cpp(233): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-     1>ItemBagManager.cpp(253): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-     1>ItemBagManager.cpp(257): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-         ItemManager.cpp
-         LuckyCoin.cpp
-         Monster.cpp
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4305: 'initializing' : truncation from 'int' to 'const BYTE'
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4309: 'initializing' : truncation of constant value
-     1>Monster.cpp(720): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>Monster.cpp(730): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         MuRummy.cpp
-         NpcTalk.cpp
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4305: 'initializing' : truncation from 'int' to 'const BYTE'
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4309: 'initializing' : truncation of constant value
-     1>g:\source mu\source\gameserver_up15\gameserver\BDungLuyenItem.h(84): warning C4091: 'typedef ' : ignored on left of 'VCSEV_COUNTLIST' when no variable is declared
-         ObjectManager.cpp
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4305: 'initializing' : truncation from 'int' to 'const BYTE'
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4309: 'initializing' : truncation of constant value
-     1>g:\source mu\source\gameserver_up15\gameserver\BDungLuyenItem.h(84): warning C4091: 'typedef ' : ignored on left of 'VCSEV_COUNTLIST' when no variable is declared
-     1>ObjectManager.cpp(1031): warning C4018: '<' : signed/unsigned mismatch
-     1>ObjectManager.cpp(1373): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>ObjectManager.cpp(1377): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>ObjectManager.cpp(1439): warning C4244: '=' : conversion from 'float' to 'QWORD', possible loss of data
-     1>ObjectManager.cpp(1453): warning C4244: '=' : conversion from 'float' to 'QWORD', possible loss of data
-         RoyalBattleGround.cpp
-     1>RoyalBattleGround.cpp(116): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-     1>RoyalBattleGround.cpp(300): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(303): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(306): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(309): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(312): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(315): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(318): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(321): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(324): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(339): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(356): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(385): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(389): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(389): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(410): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(439): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(443): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(463): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(476): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(477): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(494): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(495): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(512): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(513): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(529): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(580): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(586): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(780): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(785): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(790): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(796): warning C4146: unary minus operator applied to unsigned type, result still unsigned
-     1>RoyalBattleGround.cpp(796): warning C4146: unary minus operator applied to unsigned type, result still unsigned
-     1>RoyalBattleGround.cpp(796): warning C4146: unary minus operator applied to unsigned type, result still unsigned
-     1>RoyalBattleGround.cpp(989): warning C4482: nonstandard extension used: enum 'RBG_STATE' used in qualified name
-     1>RoyalBattleGround.cpp(1146): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(1169): warning C4244: 'argument' : conversion from 'long' to 'short', possible loss of data
-     1>RoyalBattleGround.cpp(1169): warning C4244: 'argument' : conversion from 'long' to 'short', possible loss of data
-     1>RoyalBattleGround.cpp(1201): warning C4018: '>' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(1214): warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
-     1>RoyalBattleGround.cpp(1215): warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1221): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
-     1>RoyalBattleGround.cpp(1283): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
-     1>RoyalBattleGround.cpp(1288): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>RoyalBattleGround.cpp(1288): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>RoyalBattleGround.cpp(1390): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(1415): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(1430): warning C4018: '<' : signed/unsigned mismatch
-     1>RoyalBattleGround.cpp(1639): warning C4244: '=' : conversion from 'time_t' to 'int', possible loss of data
-         ServerInfo.cpp
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4305: 'initializing' : truncation from 'int' to 'const BYTE'
-     1>g:\source mu\source\gameserver_up15\gameserver\CTCMini.h(201): warning C4309: 'initializing' : truncation of constant value
-     1>g:\source mu\source\gameserver_up15\gameserver\BDungLuyenItem.h(84): warning C4091: 'typedef ' : ignored on left of 'VCSEV_COUNTLIST' when no variable is declared
-         TEventGreatPK.cpp
-     1>TEventGreatPK.cpp(184): warning C4172: returning address of local variable or temporary
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D GAMESERVER_TYPE=0 /D GAMESERVER_UPDATE=603 /D GAMESERVER_LANGUAGE=1 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\GameServer_EX603\GameServer.pch" /Fo"Release\GameServer_EX603\\" /Fd"Release\GameServer_EX603\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BCustomItemBank.cpp
+         BCustomItemBank.cpp
+     1>BCustomItemBank.cpp(345): warning C4172: returning address of local variable or temporary
+     1>BCustomItemBank.cpp(396): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>BCustomItemBank.cpp(579): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(579): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(598): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(598): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(612): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(612): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(633): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(633): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(647): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(647): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(668): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(668): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(682): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(682): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(713): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
+     1>BCustomItemBank.cpp(713): warning C4244: 'argument' : conversion from 'short' to 'BYTE', possible loss of data
        ResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -509,4 +357,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:50.43
+Time Elapsed 00:00:46.34

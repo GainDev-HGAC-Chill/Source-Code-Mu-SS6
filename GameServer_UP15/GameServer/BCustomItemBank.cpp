@@ -181,46 +181,48 @@ int BCustomItemBank::CheckInfoListItemBank(int ItemIndex, int ItemLevel)
 
 
 
-void BCustomItemBank::DSSetInfoUserBankItem(GSSENDDS_COUNT_ITEMBANK* lpMsg) //Nhan KQ tu DS va Cache Info 0xD9, 0x18
+void BCustomItemBank::DSSetInfoUserBankItem(GSSENDDS_COUNT_ITEMBANK* lpMsg)
 {
 	int aIndex = lpMsg->aIndex;
 
-	if (gObj[aIndex].Type != OBJECT_USER)
+	if (gObj[aIndex].Type != OBJECT_USER || gObjIsConnected(aIndex) == false)
 	{
 		return;
 	}
 
-	if (gObjIsConnected(aIndex) == false)
-	{
-		return;
-	}
 	if (gObj[aIndex].IsBot >= 1 || gObj[aIndex].m_OfflineMode != 0 || gObj[aIndex].IsFakeOnline != 0)
 	{
 		return;
 	}
+
 	if (!this->Enable)
 	{
 		return;
 	}
+		for (int i = 0; i < 100; i++)
+	{
+		gObj[aIndex].BankJewelData[i].ItemIndex = -1;
+		gObj[aIndex].BankJewelData[i].ItemLevel = 0;
+		gObj[aIndex].BankJewelData[i].ItemCount = 0;
+		gObj[aIndex].BankJewelData[i].AutoPick = 0;
+	}
+
 	for (int n = 0; n < lpMsg->Count; n++)
 	{
-		USER_BANK_DATA* lpInfo = (USER_BANK_DATA*)(((BYTE*)lpMsg) + sizeof(GSSENDDS_COUNT_ITEMBANK)+(sizeof(USER_BANK_DATA)* n));
+		USER_BANK_DATA* lpInfo = (USER_BANK_DATA*)(((BYTE*)lpMsg) + sizeof(GSSENDDS_COUNT_ITEMBANK) + (sizeof(USER_BANK_DATA) * n));
 
-		if (n > 100) break;
-		//BANKDATAXML GetInfoBankDB;
-		if (this->CheckInfoListItemBank(lpInfo->ItemIndex, lpInfo->ItemLevel) != -1)
+		int mSlot = this->CheckInfoListItemBank(lpInfo->ItemIndex, lpInfo->ItemLevel);
+		if (mSlot == -1)
 		{
-			gObj[aIndex].BankJewelData[n].ItemIndex = lpInfo->ItemIndex;
-			gObj[aIndex].BankJewelData[n].ItemLevel = lpInfo->ItemLevel;
-			gObj[aIndex].BankJewelData[n].ItemCount = lpInfo->ItemCount;
-			gObj[aIndex].BankJewelData[n].AutoPick = lpInfo->AutoPick;
-			//LogAdd(LOG_BLUE, "SetInfo Bank (%d) Item (%d,%d) COunt [%d]", n, gObj[aIndex].BankJewelData[n].ItemIndex, gObj[aIndex].BankJewelData[n].ItemLevel, gObj[aIndex].BankJewelData[n].ItemCount);
+			continue;
 		}
+
+		gObj[aIndex].BankJewelData[mSlot].ItemIndex = lpInfo->ItemIndex;
+		gObj[aIndex].BankJewelData[mSlot].ItemLevel = lpInfo->ItemLevel;
+		gObj[aIndex].BankJewelData[mSlot].ItemCount = lpInfo->ItemCount;
+		gObj[aIndex].BankJewelData[mSlot].AutoPick = lpInfo->AutoPick;
 	}
-#if (CUSTOM_BCHOTROI)
-	//=== Get Item Da Ban Coin
-	gBCustomChoTroi.GDReqItemStatus(aIndex);
-#endif
+
 	this->UserSendClientInfo(aIndex);
 }
 
