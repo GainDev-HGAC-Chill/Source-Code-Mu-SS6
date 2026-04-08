@@ -375,7 +375,6 @@ void gBMocNap::NhanThuongMocNap(int aIndex, int MocNap)
 
 	//===Set Va thong bao
 	lpObj->NhanMocNap = MocNap; //Save Moc Nhan
-	lpObj->Account, lpObj->Name, lpObj->NhanMocNap);
 	GDCharacterInfoSaveSend(lpObj->Index);
 	//==Send Effect
 	if (this->Firework == 1)

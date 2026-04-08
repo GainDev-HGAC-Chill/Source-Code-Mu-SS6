@@ -318,6 +318,7 @@
     <ClInclude Include="ActiveInvasions.h" />
     <ClInclude Include="ArcaBattle.h" />
     <ClInclude Include="Attack.h" />
+    <ClInclude Include="AutoSubRestart.h" />
     <ClInclude Include="BAntihack.h" />
     <ClInclude Include="BattleGround.h" />
     <ClInclude Include="BattleSoccer.h" />
@@ -630,6 +631,7 @@
     <ClCompile Include="ActiveInvasions.cpp" />
     <ClCompile Include="ArcaBattle.cpp" />
     <ClCompile Include="Attack.cpp" />
+    <ClCompile Include="AutoSubRestart.cpp" />
     <ClCompile Include="BAntihack.cpp" />
     <ClCompile Include="BattleGround.cpp" />
     <ClCompile Include="BattleSoccer.cpp" />

@@ -46,6 +46,7 @@
 #include "BattleRoyale.h"
 #include "FakeOnline.h"
 #include "BotOnline.h"
+#include "AutoSubRestart.h"
 TCHAR szTitle[MAX_LOADSTRING];
 TCHAR szWindowClass[MAX_LOADSTRING];
 HINSTANCE hInst;
@@ -122,6 +123,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpCmdLine
 		else
 		{
 			GameMainInit(hWnd);
+			gAutoSubRestart.Load();
 
 			JoinServerConnect(WM_JOIN_SERVER_MSG_PROC);
 
@@ -656,6 +658,7 @@ LRESULT CALLBACK WndProc(HWND hWnd,UINT message,WPARAM wParam,LPARAM lParam) // 
 				case WM_TIMER_2000:
 					gObjCountProc();
 					gServerDisplayer.Run();
+					gAutoSubRestart.Run();
 					break;
 				case WM_TIMER_10000:
 					JoinServerReconnect(hWnd,WM_JOIN_SERVER_MSG_PROC);
