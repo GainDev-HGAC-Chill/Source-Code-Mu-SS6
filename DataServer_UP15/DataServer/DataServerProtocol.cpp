@@ -1934,7 +1934,7 @@ void GDCharacterInfoSaveRecv(SDHP_CHARACTER_INFO_SAVE_RECV* lpMsg) // OK
 #endif
 
 	//==Chien Truong Co
-	gQueryManager.ExecQuery("UPDATE Character SET CTCTime=%d, CTCRegDay=%d  WHERE AccountID='%s' AND Name='%s'", lpMsg->CTCTime, lpMsg->CTCRegDay, lpMsg->account, lpMsg->name);
+	gQueryManager.ExecQuery("UPDATE Character SET CTCTime=%d, CTCRegDay=%d  WHERE AccountID='%s' AND Name='%s'", lpMsg->CTCTime, 0, lpMsg->account, lpMsg->name);
 	gQueryManager.Close();
 
 #if(B_HON_HOAN)

@@ -1,4 +1,4 @@
-﻿Build started 4/9/26 04:57:32.
+﻿Build started 4/12/26 19:12:58.
      1>Project "G:\source mu\Source\DataServer_UP15\DataServer\DataServer.vcxproj" on node 2 (build target(s)).
        Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
@@ -6,8 +6,7 @@
          Creating "Release\DataServer_EX603\DataServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D DATASERVER_UPDATE=603 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\DataServer_EX603\DataServer.pch" /Fo"Release\DataServer_EX603\\" /Fd"Release\DataServer_EX603\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DataServer.cpp DataServerProtocol.cpp
-         DataServer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D DATASERVER_UPDATE=603 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\DataServer_EX603\DataServer.pch" /Fo"Release\DataServer_EX603\\" /Fd"Release\DataServer_EX603\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DataServerProtocol.cpp
          DataServerProtocol.cpp
      1>DataServerProtocol.cpp(1442): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
@@ -70,4 +69,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.87
+Time Elapsed 00:00:04.81
